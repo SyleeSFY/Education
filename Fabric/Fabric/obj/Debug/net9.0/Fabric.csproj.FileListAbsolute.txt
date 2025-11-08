@@ -1,0 +1,14 @@
+/Users/artemryklin/RiderProjects/Fabric/Fabric/bin/Debug/net9.0/Fabric
+/Users/artemryklin/RiderProjects/Fabric/Fabric/bin/Debug/net9.0/Fabric.deps.json
+/Users/artemryklin/RiderProjects/Fabric/Fabric/bin/Debug/net9.0/Fabric.runtimeconfig.json
+/Users/artemryklin/RiderProjects/Fabric/Fabric/bin/Debug/net9.0/Fabric.dll
+/Users/artemryklin/RiderProjects/Fabric/Fabric/bin/Debug/net9.0/Fabric.pdb
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.AssemblyInfoInputs.cache
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.AssemblyInfo.cs
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.csproj.CoreCompileInputs.cache
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.dll
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/refint/Fabric.dll
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.pdb
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/Fabric.genruntimeconfig.cache
+/Users/artemryklin/RiderProjects/Fabric/Fabric/obj/Debug/net9.0/ref/Fabric.dll

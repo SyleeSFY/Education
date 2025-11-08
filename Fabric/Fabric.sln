@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fabric", "Fabric\Fabric.csproj", "{02879874-67E8-47B3-A724-67DB29401520}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02879874-67E8-47B3-A724-67DB29401520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02879874-67E8-47B3-A724-67DB29401520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02879874-67E8-47B3-A724-67DB29401520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02879874-67E8-47B3-A724-67DB29401520}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
