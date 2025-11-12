@@ -1,0 +1,57 @@
+﻿@using MudBlazor
+@inject IJSRuntime JSRuntime
+@page "/"
+
+<MudAppBar>
+    <PageTitle>Home</PageTitle>
+</MudAppBar>
+
+<MudMainContent>
+    <MudContainer Class="text-center">
+        <div class="Upper-Name m-15" id="border">
+            <MudText Typo="Typo.h5" Color="Color.Success" Class="mb-4">
+                Время до нового года!
+            </MudText>
+            <MudText Typo="Typo.h4" Class="">
+                @_date.GetFormattedTime()
+            </MudText>
+        </div>
+        <MudGrid Justify="Justify.Center" Class="mt-20">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" OnClick="ChangeColor">
+                Кнопка прикола
+            </MudButton>
+        </MudGrid>
+    </MudContainer>
+</MudMainContent>
+
+@code
+{
+    private Timer? _timer;
+    private TimeToNewYear _date = new TimeToNewYear();
+    private IJSObjectReference? _module;
+    
+    protected override void OnInitialized()
+        => _timer = new Timer(_ => { InvokeAsync(StateHasChanged); }, null, 0, 1000);
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) 
+            _module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./Pages/Home.razor.js");
+    }
+
+    private async Task ChangeColor()
+    {
+        if (_module != null) 
+            await _module.InvokeVoidAsync("ChangeColor");
+    }
+        
+    public async ValueTask DisposeAsync()
+    {
+        if (_module != null)
+        {
+            await _module.DisposeAsync();
+            await _timer.DisposeAsync();
+            _module = null;
+        }
+    }
+}
